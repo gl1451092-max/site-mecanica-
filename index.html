@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoTech - Oficina Mecânica Premium</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+</head>
+<body>
+
+    <header class="header" id="header">
+        <div class="container nav-container">
+            <a href="#" class="logo"><i class="fa-solid fa-gear logo-icon"></i> Auto<span>Tech</span></a>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#servicos">Serviços</a></li>
+                    <li><a href="#diferenciais">Diferenciais</a></li>
+                    <li><a href="#agendamento">Agendar</a></li>
+                </ul>
+            </nav>
+            <a href="#agendamento" class="btn btn-primary btn-glow">Agendar Agora</a>
+        </div>
+    </header>
+
+    <section id="inicio" class="hero">
+        <div class="hero-bg"></div>
+        <div class="container hero-content">
+            <span class="badge reveal-top">Mecânica de Alta Performance</span>
+            <h1 class="reveal-left">Cuidado de Alta Precisão para o seu Veículo</h1>
+            <p class="reveal-left-delay">Manutenção preventiva, diagnóstico computadorizado e alta performance com tecnologia de ponta.</p>
+            <div class="hero-btns reveal-bottom">
+                <a href="#agendamento" class="btn btn-primary btn-glow">Agendar Horário</a>
+                <a href="https://wa.me/seunumero" target="_blank" class="btn btn-whatsapp"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="servicos" class="services">
+        <div class="container">
+            <h2 class="section-title reveal-title">Nossos Serviços <span>Especializados</span></h2>
+            <div class="services-grid">
+                <div class="service-card reveal-card">
+                    <div class="icon-wrapper"><i class="fa-solid fa-microchip"></i></div>
+                    <h3>Diagnóstico Eletrônico</h3>
+                    <p>Mapeamento completo dos sistemas com scanners de última geração.</p>
+                </div>
+                <div class="service-card reveal-card">
+                    <div class="icon-wrapper"><i class="fa-solid fa-oil-can"></i></div>
+                    <h3>Troca de Óleo Premium</h3>
+                    <p>Lubrificantes sintéticos específicos recomendados pelas montadoras.</p>
+                </div>
+                <div class="service-card reveal-card">
+                    <div class="icon-wrapper"><i class="fa-solid fa-compact-disc"></i></div>
+                    <h3>Sistemas de Freios</h3>
+                    <p>Revisão de pastilhas, discos e calibração de sistemas ABS e EBD.</p>
+                </div>
+                <div class="service-card reveal-card">
+                    <div class="icon-wrapper"><i class="fa-solid fa-gauge-high"></i></div>
+                    <h3>Suspensão & Direção</h3>
+                    <p>Alinhamento 3D, balanceamento e substituição de amortecedores.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="agendamento" class="booking">
+        <div class="container booking-container">
+            <div class="booking-info reveal-left">
+                <h2>Agende sua Visitacao em <span>Poucos Cliques</span></h2>
+                <p>Evite filas e garanta o melhor horário para o seu atendimento.</p>
+                <div class="info-items">
+                    <div class="info-item"><i class="fa-solid fa-clock"></i> Seg a Sex: 08h às 18h | Sáb: 08h às 12h</div>
+                    <div class="info-item"><i class="fa-solid fa-location-dot"></i> Av. Principal, 1580 - Centro</div>
+                    <div class="info-item"><i class="fa-solid fa-shield-halved"></i> Garantia de 1 ano nos serviços</div>
+                </div>
+            </div>
+            <form class="booking-form reveal-right" id="form-agendamento">
+                <h3>Agendamento Online</h3>
+                <div class="input-group">
+                    <input type="text" id="nome" placeholder="Seu Nome Completo" required>
+                </div>
+                <div class="input-group">
+                    <input type="tel" id="telefone" placeholder="Seu WhatsApp" required>
+                </div>
+                <div class="input-group">
+                    <input type="text" id="veiculo" placeholder="Modelo do Veículo e Ano" required>
+                </div>
+                <div class="input-group">
+                    <select id="servico" required>
+                        <option value="" disabled selected>Selecione o Serviço</option>
+                        <option value="revisao">Revisão Geral</option>
+                        <option value="oleo">Troca de Óleo</option>
+                        <option value="freios">Freios</option>
+                        <option value="diagnostico">Diagnóstico Eletrônico</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-primary btn-glow btn-block">Confirmar Agendamento</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 AutoTech Oficina Mecânica. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
